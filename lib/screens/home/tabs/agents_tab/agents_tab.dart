@@ -39,7 +39,7 @@ class AgentsTab extends StatelessWidget {
               children: [
                 Container(
                   width: MediaQuery.of(context).size.width * .7,
-                  height: MediaQuery.of(context).size.height * .47,
+                  height: MediaQuery.of(context).size.height * .43,
                   decoration: BoxDecoration(
                     // image: DecorationImage(
                     //   image: AssetImage(AppAssets.agents_1),
@@ -58,7 +58,7 @@ class AgentsTab extends StatelessWidget {
                   ),
                 ),
                 Positioned.fill(
-                    bottom: 50, top: -100, child: Image.asset(agent.image)),
+                    bottom: 60, top: -90, child: Image.asset(agent.image)),
                 Positioned(
                   left: 10,
                   child: Text(
