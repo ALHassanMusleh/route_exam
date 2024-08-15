@@ -1,51 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:route_exam/model/agents_md.dart';
 import 'package:route_exam/screens/agents_details/agents_details.dart';
-import 'package:route_exam/utils/app_assets.dart';
-import 'package:route_exam/utils/app_colors.dart';
+
+import 'package:route_exam/utils/app_constants.dart';
 import 'package:route_exam/utils/app_styles.dart';
 
 class AgentsTab extends StatelessWidget {
-  AgentsTab({super.key});
-
-  final List<AgentsModel> agents = [
-    AgentsModel(
-      image: AppAssets.agents_2,
-      subImage: AppAssets.subAgents_1,
-      icon: AppAssets.iconAgents_1,
-      title: 'Skye',
-      description:
-          'Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.',
-      colors: [
-        Color(0xff94E789),
-        Color(0xff314D48),
-      ],
-    ),
-    AgentsModel(
-      image: AppAssets.agents_1,
-      subImage: AppAssets.subAgents_2,
-      icon: AppAssets.iconAgents_2,
-      title: 'Gekko',
-      description:
-          'Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.',
-      colors: [
-        Color(0xffC7F458),
-        Color(0xff3A7233),
-      ],
-    ),
-    AgentsModel(
-      image: AppAssets.agents_3,
-      subImage: AppAssets.subAgents_3,
-      icon: AppAssets.iconAgents_3,
-      title: 'KAY/O',
-      description:
-          'Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.',
-      colors: [
-        Color(0xff4AFAFF),
-        Color(0xff391A61),
-      ],
-    ),
-  ];
+  const AgentsTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,9 +14,9 @@ class AgentsTab extends StatelessWidget {
       margin: EdgeInsets.only(left: 20),
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
-        itemCount: agents.length,
+        itemCount: AppConstants.agents.length,
         itemBuilder: (context, index) =>
-            buildAgentsItem(context, agents[index]),
+            buildAgentsItem(context, AppConstants.agents[index]),
         separatorBuilder: (context, index) => SizedBox(
           width: 20,
         ),
