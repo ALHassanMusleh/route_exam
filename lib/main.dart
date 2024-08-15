@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:route_exam/screens/agents_details/agents_details.dart';
 import 'package:route_exam/screens/home/home_screen.dart';
 import 'package:route_exam/screens/splash/splash_screen.dart';
 
@@ -31,12 +32,13 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: false,
       ),
       routes: {
         SplashScreen.routeName : (_)=> SplashScreen(),
         HomeScreen.routeName : (_)=> HomeScreen(),
+        AgentsDetails.routeName : (_)=> AgentsDetails(),
       },
       initialRoute: SplashScreen.routeName,
     );

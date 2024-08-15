@@ -1,9 +1,16 @@
 abstract class AppAssets {
   static const String assetsPath = "assets/images/";
   static const String splashMain = "${assetsPath}Splash_Screen_Dark.png";
+  static const String logo = "${assetsPath}Logo_Icon.png";
   static const String agents_1 = "${assetsPath}agents_1.png";
   static const String agents_2 = "${assetsPath}agents_2.png";
   static const String agents_3 = "${assetsPath}agents_3.png";
+  static const String subAgents_1 = "${assetsPath}sub_image_1.png";
+  static const String subAgents_2 = "${assetsPath}sub_image_1.png";
+  static const String subAgents_3 = "${assetsPath}sub_image_1.png";
+  static const String iconAgents_1 = "${assetsPath}Initiator.png";
+  static const String iconAgents_2 = "${assetsPath}Duelist.png";
+  static const String iconAgents_3 = "${assetsPath}Controller.png";
   static const String splashMaps_1 = "${assetsPath}splash_1.png";
   static const String splashMaps_2 = "${assetsPath}splash_2.png";
   static const String splashMaps_3 = "${assetsPath}splash_3.png";
