@@ -12,17 +12,17 @@ class WeaponsTab extends StatelessWidget {
     return ListView.separated(
       itemCount: AppConstants.weapons.length,
       itemBuilder: (context, index) =>
-          BuildWeaponsItem(context, AppConstants.weapons[index]),
+          BuildWeaponsItem(context, AppConstants.weapons[index], index),
       separatorBuilder: (context, index) => SizedBox(
         height: 10,
       ),
     );
   }
 
-  Widget BuildWeaponsItem(context, WeaponsModel weapon) => Padding(
+  Widget BuildWeaponsItem(context, WeaponsModel weapon, index) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20),
         child: Stack(
-          alignment: Alignment.centerRight,
+          alignment: index % 2 == 0 ?  Alignment.bottomLeft : Alignment.bottomRight,
           clipBehavior: Clip.none,
           children: [
             Container(
@@ -34,7 +34,9 @@ class WeaponsTab extends StatelessWidget {
               ),
             ),
             Positioned(
-              left: 8,
+              right: index % 2 == 0 ? null : 8,
+              left: index % 2 == 0 ? 8 : null,
+              bottom: 10,
               child: Column(
                 children: [
                   Text(
@@ -49,9 +51,11 @@ class WeaponsTab extends StatelessWidget {
               ),
             ),
             Positioned.fill(
-              left: 10,
+              right: index % 2 == 0 ? 0 : 20,
+              left: index % 2 == 0 ? 20 : 0,
+              bottom: 10,
               child: Transform.rotate(
-                angle: 20 * 3.1415926535897932 / 180,
+                angle: index % 2 == 0 ? 6.6 : -20 * 3.1415926535897932 / 180,
                 child: Image.asset(
                   weapon.image,
                 ),

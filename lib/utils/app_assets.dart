@@ -36,8 +36,10 @@ abstract class AppAssets {
 
   // weapons images
   static const String assetsWeaponsPath = "assets/images/wepons_images/";
+  static const String weapons_0 = "${assetsWeaponsPath}weapons_0.png";
   static const String weapons_1 = "${assetsWeaponsPath}weapons_1.png";
   static const String weapons_2 = "${assetsWeaponsPath}weapons_2.png";
   static const String weapons_3 = "${assetsWeaponsPath}weapons_3.png";
   static const String weapons_4 = "${assetsWeaponsPath}weapons_4.png";
+  static const String weapons_5 = "${assetsWeaponsPath}weapons_5.png";
 }

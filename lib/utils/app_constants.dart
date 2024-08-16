@@ -97,24 +97,34 @@ abstract class AppConstants {
 
   static final List<WeaponsModel> weapons = [
     WeaponsModel(
-      image: AppAssets.weapons_1,
+      image: AppAssets.weapons_0,
       title: 'Odin',
       subTitle: 'Heavy Weapons',
     ),
     WeaponsModel(
-      image: AppAssets.weapons_2,
+      image: AppAssets.weapons_1,
       title: 'Vandal',
-      subTitle: 'Assault Rifles',
+      subTitle: 'Rifle Weapons',
     ),
     WeaponsModel(
-      image: AppAssets.weapons_3,
+      image: AppAssets.weapons_2,
       title: 'Ares',
       subTitle: 'Heavy Weapons',
     ),
     WeaponsModel(
+      image: AppAssets.weapons_3,
+      title: 'Bulldog',
+      subTitle: 'Rifle Weapons',
+    ),
+    WeaponsModel(
       image: AppAssets.weapons_4,
-      title: 'Spectre',
-      subTitle: 'SMG',
+      title: 'Phantom',
+      subTitle: 'Rifle Weapons',
+    ),
+    WeaponsModel(
+      image: AppAssets.weapons_5,
+      title: 'Ares',
+      subTitle: 'Heavy Weapons',
     ),
   ];
 }
